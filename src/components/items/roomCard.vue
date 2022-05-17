@@ -48,6 +48,6 @@
 
 .card-footer:hover{
     cursor: pointer;
-    background-color: #0080ff;
+    background: linear-gradient(145deg, #015eba, #209aff);
 }
 </style>

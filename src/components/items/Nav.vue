@@ -1,19 +1,21 @@
 <script>
     export default {
-        props: ['type']
-
+        props: {
+            typeNav: String
+        }
     }
 
     
 </script>
 
-<template >
+<template>
   <nav>
         <div class="logo" @click="$emit('change-page', 'homePage')">
             <img src="robotic-arm2.png" alt="">
             <h1>GESTBOT</h1>
         </div>
-        <div v-if="type==home" class="nav-links">
+
+        <div v-if="typeNav=='home'" class="nav-links">
             <a href="#">About</a>
             <a href="#">About</a>
             <a href="#">About</a>
@@ -21,8 +23,9 @@
             <button class="btn" @click="$emit('change-page', 'roomsPage')"> ACCESS </button>
         </div>
 
-        <div v-else-if="type==rooms" class="nav-links">
-            <div class="icon-container"><i class="fa-solid fa-wrench"></i></div>
+        <div v-else-if="typeNav=='rooms'" class="nav-icons">
+            <div class="icon-container" style="width: 50px; height: 50px;"><i class="fa-solid fa-wrench" style="font-size: 2rem;"></i></div>
+            <div style="width: 20px;"></div>
             <div class="icon-container"><i class="fa-solid fa-robot"></i></div>
         </div>
 
@@ -83,23 +86,48 @@
 
     .nav-links i{
         font-size: 2rem;
-        margin-right: 35px;
         margin-right: 60px;
     }
     .nav-links i:hover{
+        color: #015eba;
         cursor: pointer;
     }
 
+    .nav-icons{
+        display: flex;
+        align-items: flex-end;
+        margin-right: 15px;
+    }
+
     .icon-container{
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
         background-color: var(--blue);
+        box-shadow:  5px 5px 10px #bfbfbf,
+             -5px -5px 10px #ffffff;
+    }
+    .icon-container:hover{
+        background: linear-gradient(145deg, #015eba, #209aff);
+        box-shadow:  5px 5px 10px #bfbfbf,
+             -5px -5px 10px #ffffff;
+        cursor: pointer;
+        background-color: #0080ff;
+    }
+    .icon-container i{
+        font-size: 2.5rem;
+        color: var(--white);
     }
 
     #close{
         color: var(--blue);
     }
-    @media (max-width: 1400px) {
+    /*media (max-width: 1400px) {
         .nav-links{
             display: none;
         }
-    }
+    } */
 </style>

@@ -38,7 +38,7 @@ p{
 }
 
 .btn:hover{
-    background-color: #0080ff;
+    background: linear-gradient(145deg, #015eba, #209aff);
     cursor: pointer;
 }
 

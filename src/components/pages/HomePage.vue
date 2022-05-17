@@ -20,7 +20,7 @@
 </script>
 
 <template>
-  <Nav :type="home"
+  <Nav :typeNav="home"
     @change-page="(name) => changePage(name)"
   ></Nav>
 

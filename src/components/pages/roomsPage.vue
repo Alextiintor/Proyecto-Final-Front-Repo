@@ -36,7 +36,7 @@
 </script>
 
 <template>
-  <Nav :type="rooms"
+  <Nav :typeNav="'else'"
     @change-page="(name) => changePage(name)"
   ></Nav>
   <div class="container">

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <Nav :type="home"></Nav>
+  <Nav :typeNav="home"></Nav>
 
   <div class="container front-page">
     <div class="text">

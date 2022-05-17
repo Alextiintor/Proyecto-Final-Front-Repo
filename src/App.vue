@@ -4,12 +4,13 @@
 import HomePage from './components/pages/HomePage.vue'
 import style from './style.css'
 import RoomsPage from './components/pages/roomsPage.vue'
+import RoomPage from './components/pages/roomPage.vue'
 
 </script>
 
 <template>
 
-  <RoomsPage/>
+  <RoomPage/>
 
 </template>
 

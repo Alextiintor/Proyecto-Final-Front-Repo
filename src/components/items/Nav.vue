@@ -71,7 +71,7 @@
         cursor: pointer;
     }
 
-    @media (max-width: 1250px) {
+    @media (max-width: 1400px) {
         .nav-links{
             display: none;
         }

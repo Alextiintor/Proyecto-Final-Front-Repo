@@ -1,12 +1,15 @@
 <script>
     export default {
         props: ['type']
+
     }
+
+    
 </script>
 
 <template >
   <nav>
-        <div class="logo">
+        <div class="logo" @click="$emit('change-page', 'homePage')">
             <img src="robotic-arm2.png" alt="">
             <h1>GESTBOT</h1>
         </div>
@@ -15,7 +18,7 @@
             <a href="#">About</a>
             <a href="#">About</a>
             <i class="fa-solid fa-earth-europe fa-2xl"></i>
-            <button class="btn"> ACCESS </button>
+            <button class="btn" @click="$emit('change-page', 'roomsPage')"> ACCESS </button>
         </div>
 
         <div v-else-if="type==rooms" class="nav-links">
@@ -48,6 +51,11 @@
     .logo{
         display: flex;
         align-items: center;
+        
+    }
+    
+    .logo:hover{
+        cursor: pointer;
     }
 
     .logo img {

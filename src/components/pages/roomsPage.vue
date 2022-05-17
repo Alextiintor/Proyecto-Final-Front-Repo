@@ -1,16 +1,50 @@
-<script setup>
-    import Nav from '../items/Nav.vue'
-    import RoomCard from '../items/roomCard.vue';
+<script>
+  import Nav from '../items/Nav.vue'
+  import RoomCard from '../items/roomCard.vue';
+
+  export default{
+    components: {
+      Nav,
+      RoomCard
+    },
+    data(){
+      return {
+        robots: {
+          firstRobot: {
+            roomNumber: 1
+          },
+          secondRobot: {
+            roomNumber: 2
+          },
+          thirdRobot: {
+            roomNumber: 3
+          },
+          fourthRobot: {
+            roomNumber: 4
+          }
+        }
+      }
+    },
+    methods:{
+      changePage: function(page){
+        console.log(page);
+        this.$emit('main-change-page', page);
+      }
+    }
+  }
+
 </script>
 
 <template>
-  <Nav :type="rooms"></Nav>
+  <Nav :type="rooms"
+    @change-page="(name) => changePage(name)"
+  ></Nav>
   <div class="container">
-    
-      <RoomCard :cardNumber="1"></RoomCard>
-      <RoomCard :cardNumber="2"></RoomCard>
-      <RoomCard :cardNumber="3"></RoomCard>
-      <RoomCard :cardNumber="4"></RoomCard>
+    <RoomCard 
+      v-for="robot in robots"
+              :cardNumber="robot.roomNumber"
+      :key="robot"
+    ></RoomCard>
   </div>
 </template>
 

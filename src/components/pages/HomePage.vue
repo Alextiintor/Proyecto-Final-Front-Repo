@@ -1,9 +1,28 @@
-<script setup>
+<script>
   import Nav from '../items/Nav.vue'
+
+  export default{
+    components: {
+      Nav
+    },
+    data(){
+      return {
+
+      }
+    },
+    methods:{
+      changePage: function(page){
+        console.log(page);
+        this.$emit('main-change-page', page);
+      }
+    }
+  }
 </script>
 
 <template>
-  <Nav :type="home"></Nav>
+  <Nav :type="home"
+    @change-page="(name) => changePage(name)"
+  ></Nav>
 
   <div class="container front-page">
     <div class="text">

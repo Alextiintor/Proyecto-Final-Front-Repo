@@ -1,6 +1,8 @@
 <script>
     export default {
-        props: ['cardNumber']
+        props: {
+            cardNumber: Number
+        }
     }
 </script>
 

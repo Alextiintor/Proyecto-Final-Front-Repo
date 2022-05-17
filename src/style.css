@@ -17,6 +17,16 @@
 }
 
 .btn:hover{
-    background-color: var(--blue);
+    background-color: #0080ff;
+    cursor: pointer;
+}
+
+.container{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 70vh;
+    align-items: center;
 }
 

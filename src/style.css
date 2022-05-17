@@ -14,21 +14,6 @@ html{
     scroll-behavior: smooth;
 
 }
-html, body, .container  {
-    /* Height and width fallback for older browsers. */
-    height: 100%;
-    width: 100%;
-    
-    /* Set the height to match that of the viewport. */
-    height: 100vh;
-    
-    /* Set the width to match that of the viewport. */
-    /* width: 100vw; */
-    
-    /* Remove any browser-default margins. */
-    margin: 0;
-    /* overflow-x: hidden; */
-}
 
 h2{
     font-family: 'Josefin Sans';
@@ -36,11 +21,6 @@ h2{
 
 p{
     font-family: 'asap';
-}
-
-#app{
-    display: flex;
-    flex-direction: column;
 }
 
 .btn{
@@ -62,11 +42,10 @@ p{
 }
 
 .container{
-    position: absolute;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    height: 70vh;
+    height: 100vh;
     align-items: center;
 }
 

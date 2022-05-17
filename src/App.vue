@@ -9,7 +9,7 @@ import RoomsPage from './components/pages/roomsPage.vue'
 
 <template>
 
-  <RoomsPage/>
+  <HomePage/>
 
 </template>
 

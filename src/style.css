@@ -7,9 +7,9 @@
 
 .btn{
     border: none;
-    border-radius: 7px;
-    font-family: 'Josefin Sans';
-    font-size: 16px;
+    border-radius: 10px;
+    font-family: 'Asap';
+    font-size: 2.25rem;
     font-weight: bold;
     padding: 12px 20px;
     color: var(--white);

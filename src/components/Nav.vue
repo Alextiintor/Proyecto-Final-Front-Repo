@@ -66,20 +66,4 @@
     .nav-links i:hover{
         cursor: pointer;
     }
-
-    .btn{
-        border: none;
-        border-radius: 7px;
-        font-family: 'Josefin Sans';
-        font-size: 16px;
-        font-weight: bold;
-        padding: 12px 20px;
-        color: white;
-        background-color: #56A0D3;
-    }
-
-    .btn:hover{
-        background-color: #4987b0;
-        cursor: pointer;
-    }
 </style>

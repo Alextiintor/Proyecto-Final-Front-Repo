@@ -5,6 +5,44 @@
     --black: #08090A;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+html, body, .container  {
+    /* Height and width fallback for older browsers. */
+    height: 100%;
+    width: 100%;
+    
+    /* Set the height to match that of the viewport. */
+    height: 100vh;
+    
+    /* Set the width to match that of the viewport. */
+    /* width: 100vw; */
+    
+    /* Remove any browser-default margins. */
+    margin: 0;
+    /* overflow-x: hidden; */
+}
+
+h2{
+    font-family: 'Josefin Sans';
+}
+
+p{
+    font-family: 'asap';
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+}
+
 .btn{
     border: none;
     border-radius: 10px;
@@ -14,6 +52,8 @@
     padding: 12px 20px;
     color: var(--white);
     background-color: var(--blue);
+    text-align: center;
+    display: inline-block;
 }
 
 .btn:hover{
@@ -28,5 +68,10 @@
     justify-content: space-around;
     height: 70vh;
     align-items: center;
+}
+
+footer{
+    height: 50vh;
+    background-color: grey;
 }
 

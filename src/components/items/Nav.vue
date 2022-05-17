@@ -20,9 +20,11 @@
 
 <style scoped>
     nav{
+        position: absolute;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        width: 100%;
     }
 
     h1{
@@ -67,5 +69,11 @@
     }
     .nav-links i:hover{
         cursor: pointer;
+    }
+
+    @media (max-width: 1250px) {
+        .nav-links{
+            display: none;
+        }
     }
 </style>

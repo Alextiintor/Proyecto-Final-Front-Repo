@@ -1,0 +1,22 @@
+:root {
+    --blue: #1e90ff;
+    --red: #D35656;
+    --white: #F4F7F5;
+    --black: #08090A;
+}
+
+.btn{
+    border: none;
+    border-radius: 7px;
+    font-family: 'Josefin Sans';
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.btn:hover{
+    background-color: var(--blue);
+}
+

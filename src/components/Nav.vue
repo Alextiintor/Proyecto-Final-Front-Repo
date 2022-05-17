@@ -13,7 +13,7 @@
           <a href="#">About</a>
           <a href="#">About</a>
           <i class="fa-solid fa-earth-europe"></i>
-          <button class="btn"> ACCESS </button>
+          <button class="btn">ACCESS</button>
       </div>
   </nav>
 </template>
@@ -53,20 +53,5 @@
 
     .nav-links i{
         margin-right: 20px;
-    }
-
-    .btn{
-        border: none;
-        border-radius: 7px;
-        font-family: 'Josefin Sans';
-        font-size: 16px;
-        font-weight: bold;
-        padding: 12px 20px;
-        color: white;
-        background-color: #56A0D3;
-    }
-
-    .btn:hover{
-        background-color: #4987b0;
     }
 </style>

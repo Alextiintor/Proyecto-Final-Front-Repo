@@ -1,20 +1,31 @@
-<script setup>
-
+<script>
+    export default {
+        props: ['type']
+    }
 </script>
 
-<template>
+<template >
   <nav>
-      <div class="logo">
-          <img src="robotic-arm2.png" alt="">
-          <h1>GESTBOT</h1>
-      </div>
-      <div class="nav-links">
-          <a href="#">About</a>
-          <a href="#">About</a>
-          <a href="#">About</a>
-          <i class="fa-solid fa-earth-europe fa-2xl"></i>
-          <button class="btn"> ACCESS </button>
-      </div>
+        <div class="logo">
+            <img src="robotic-arm2.png" alt="">
+            <h1>GESTBOT</h1>
+        </div>
+        <div v-if="type==home" class="nav-links">
+            <a href="#">About</a>
+            <a href="#">About</a>
+            <a href="#">About</a>
+            <i class="fa-solid fa-earth-europe fa-2xl"></i>
+            <button class="btn"> ACCESS </button>
+        </div>
+
+        <div v-else-if="type==rooms" class="nav-links">
+            <div class="icon-container"><i class="fa-solid fa-wrench"></i></div>
+            <div class="icon-container"><i class="fa-solid fa-robot"></i></div>
+        </div>
+
+        <div v-else class="nav-links">
+            <i id="close" class="fa-solid fa-rectangle-xmark"></i>
+        </div>
   </nav>
 </template>
 
@@ -71,6 +82,13 @@
         cursor: pointer;
     }
 
+    .icon-container{
+        background-color: var(--blue);
+    }
+
+    #close{
+        color: var(--blue);
+    }
     @media (max-width: 1250px) {
         .nav-links{
             display: none;

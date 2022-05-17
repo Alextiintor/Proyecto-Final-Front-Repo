@@ -3,6 +3,7 @@
     --red: #D35656;
     --white: #F4F7F5;
     --black: #08090A;
+    --grey: #EBEBEB;
 }
 
 *{
@@ -47,6 +48,8 @@ p{
     justify-content: space-around;
     height: 100vh;
     align-items: center;
+    /* Linea para saber donde acaban los contenedores */
+    border-bottom: 1px solid var(--grey);
 }
 
 footer{

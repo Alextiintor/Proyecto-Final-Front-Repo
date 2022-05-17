@@ -4,12 +4,13 @@
 </script>
 
 <template>
-  <Nav></Nav>
+  <Nav :type="rooms"></Nav>
   <div class="container">
-      <RoomCard></RoomCard>
-      <RoomCard></RoomCard>
-      <RoomCard></RoomCard>
-      <RoomCard></RoomCard>
+    
+      <RoomCard :cardNumber="1"></RoomCard>
+      <RoomCard :cardNumber="2"></RoomCard>
+      <RoomCard :cardNumber="3"></RoomCard>
+      <RoomCard :cardNumber="4"></RoomCard>
   </div>
 </template>
 

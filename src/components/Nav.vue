@@ -12,8 +12,8 @@
           <a href="#">About</a>
           <a href="#">About</a>
           <a href="#">About</a>
-          <i class="fa-solid fa-earth-europe"></i>
-          <button class="btn">ACCESS</button>
+          <i class="fa-solid fa-earth-europe fa-2xl"></i>
+          <button class="btn"> ACCESS </button>
       </div>
   </nav>
 </template>
@@ -28,6 +28,7 @@
     h1{
         font-family: "Nova Flat";
         font-size: 64px;
+        font-weight: 100;
         margin: 0;
     }
 
@@ -44,6 +45,7 @@
     .nav-links{
         display: flex;
         align-items: center;
+        margin-right: 15px;
     }
 
     .nav-links a {
@@ -51,7 +53,7 @@
         font-size: 2rem;
         color: black;
         text-decoration: none;
-        margin-right: 45px;
+        margin-right: 100px;
     }
 
     .nav-links a:hover {
@@ -61,5 +63,9 @@
     .nav-links i{
         font-size: 2rem;
         margin-right: 35px;
+        margin-right: 60px;
+    }
+    .nav-links i:hover{
+        cursor: pointer;
     }
 </style>

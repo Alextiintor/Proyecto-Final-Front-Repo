@@ -52,7 +52,7 @@
 
     .nav-links a {
         font-family: 'Josefin Sans';
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: black;
         text-decoration: none;
         margin-right: 100px;
@@ -63,6 +63,8 @@
     }
 
     .nav-links i{
+        font-size: 2rem;
+        margin-right: 35px;
         margin-right: 60px;
     }
     .nav-links i:hover{

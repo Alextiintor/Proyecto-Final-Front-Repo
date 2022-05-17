@@ -14,9 +14,37 @@
                 <div class="actual-gestures"></div>
             </div>
             <div class="gesture-legend">
-                <h3></h3>
+                <h3>Leyenda de gestos</h3>
                 <table>
-                    
+                    <!-- EJES -->
+                    <tr>
+                        <td class="gesture-name">Subir eje</td>
+                        <td class="gesture-icon"><i class="fa-solid fa-hand-point-up"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="gesture-name">Bajar eje</td>
+                        <td class="gesture-icon"><i class="fa-solid fa-hand-point-down"></i></td>
+                    </tr>
+
+                    <!-- MOVER -->
+                    <tr>
+                        <td class="gesture-name">Mover derecha</td>
+                        <td class="gesture-icon"><i class="fa-solid fa-hand-point-up"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="gesture-name">Mover izquierda</td>
+                        <td class="gesture-icon"><i class="fa-solid fa-hand-point-down"></i></td>
+                    </tr>
+
+                    <!-- ESTADO -->
+                    <tr>
+                        <td class="gesture-name">Pausar</td>
+                        <td class="gesture-icon"><i class="fa-solid fa-hand-point-up"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="gesture-name">Reanudar</td>
+                        <td class="gesture-icon"><i class="fa-solid fa-hand-point-down"></i></td>
+                    </tr>
                 </table>
             </div>
             <div class="local-robot"></div>
@@ -29,7 +57,24 @@
         border: 1px solid var(--black);
     }
     .gesture-legend{
-        border: 1px solid var(--black);
+        font-family: 'Asap';
+    }
+
+    .gesture-legend h3{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-family: "Nova Flat";
+        text-align: center;
+        background-color: var(--blue);
+        color: var(--white);
+    }
+
+    .gesture-name{
+        width: 70vw;
+    }
+    .gesture-icon{
+        text-align: center;
+        width: 30vw;
     }
 
 

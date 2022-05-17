@@ -5,7 +5,7 @@
 <template>
   <nav>
       <div class="logo">
-          <i class="fa-solid fa-shuttle-space"></i>
+          <img src="robotic-arm2.png" alt="">
           <h1>GESTBOT</h1>
       </div>
       <div class="nav-links">
@@ -27,11 +27,18 @@
 
     h1{
         font-family: "Nova Flat";
+        font-size: 64px;
+        margin: 0;
     }
 
     .logo{
         display: flex;
         align-items: center;
+    }
+
+    .logo img {
+        margin: 10px;
+        margin-right: 20px;
     }
 
     .nav-links{

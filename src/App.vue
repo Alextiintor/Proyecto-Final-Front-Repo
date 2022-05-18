@@ -9,7 +9,8 @@ import RoomPage from './components/pages/roomPage.vue'
 export default{
   components: {
     HomePage,
-    RoomsPage
+    RoomsPage,
+    RoomPage
   },
   data(){
     return {
@@ -32,6 +33,9 @@ export default{
     @main-change-page="(name) => changePage(name)"
   />
   <RoomsPage v-if='currentPage == "roomsPage"' 
+    @main-change-page="(name) => changePage(name)"
+  />
+  <RoomPage v-if='currentPage == "roomPage"' 
     @main-change-page="(name) => changePage(name)"
   />
 

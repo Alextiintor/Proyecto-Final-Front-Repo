@@ -44,8 +44,10 @@
       v-for="robot in robots"
               :cardNumber="robot.roomNumber"
       :key="robot"
+      @change-page="(name) => changePage(name)"
     ></RoomCard>
   </div>
+  
 </template>
 
 <style scoped>

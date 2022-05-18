@@ -32,15 +32,31 @@ p{
     font-weight: bold;
     padding: 12px 20px;
     color: var(--white);
-    background-color: var(--blue);
     text-align: center;
     display: inline-block;
 }
 
+.btn-blue{
+    background-color: var(--blue);
+}
+
+.btn-red{
+    background-color: var(--red);
+}
+
+.btn-red:hover{
+    background: linear-gradient(145deg, #cf2c2c, var(--red));
+}
+
+.btn-blue:hover{
+    background: linear-gradient(145deg, #015eba, var(--blue));
+}
+
 .btn:hover{
-    background: linear-gradient(145deg, #015eba, #209aff);
     cursor: pointer;
 }
+
+
 
 .container{
     width: 100%;

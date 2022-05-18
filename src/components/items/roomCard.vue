@@ -9,7 +9,7 @@
 <template>
     <div class="card">
         <div class="card-img">Sala {{ cardNumber }}</div>
-        <div class="card-footer"> Entrar </div>
+        <div class="card-footer" @click="$emit('change-page', 'roomPage')"> Entrar </div>
     </div>
 </template>
 

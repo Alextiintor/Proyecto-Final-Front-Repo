@@ -29,7 +29,7 @@
       <h2>A new way to move an arm robot with your bare hands</h2><br>
       <p>GestBot allows you to use an arm robot, making gestures with your hands.</p>
     </div>
-    <img src="../../assets/imgs/robot-arm.jpeg" alt="">
+    <img src="/imgs/robot-arm.jpeg" alt="">
   </div>
 
   <div class="container video-presentation">

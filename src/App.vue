@@ -3,6 +3,8 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HomePage from './components/pages/HomePage.vue'
 import style from './style.css'
+import SignIn from './components/pages/signIn.vue'
+import SignUp from './components/pages/signUp.vue'
 import RoomsPage from './components/pages/roomsPage.vue'
 import RoomPage from './components/pages/roomPage.vue'
 
@@ -10,7 +12,9 @@ export default{
   components: {
     HomePage,
     RoomsPage,
-    RoomPage
+    RoomPage,
+    SignIn,
+    SignUp
   },
   data(){
     return {
@@ -30,6 +34,9 @@ export default{
 <template>
 
   <HomePage v-if='currentPage == "homePage"'
+    @main-change-page="(name) => changePage(name)"
+  />
+  <SignIn v-if='currentPage == "signIn"' 
     @main-change-page="(name) => changePage(name)"
   />
   <RoomsPage v-if='currentPage == "roomsPage"' 

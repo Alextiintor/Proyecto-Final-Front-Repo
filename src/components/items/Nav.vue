@@ -20,7 +20,7 @@
             <a href="#libraries">Libraries</a>
             <a href="#aboutUs">About</a>
             <i class="fa-solid fa-earth-europe fa-2xl"></i>
-            <button class="btn btn-blue" @click="$emit('change-page', 'roomsPage')"> ACCESS </button>
+            <button class="btn btn-blue" @click="$emit('change-page', 'signIn')"> ACCESS </button>
         </div>
 
         <div v-else-if="typeNav=='rooms'" class="nav-icons">

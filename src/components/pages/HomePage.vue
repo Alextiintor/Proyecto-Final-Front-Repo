@@ -42,7 +42,7 @@
   </div>
 
   <div id="gestures" class="container app-show">
-    <h1>Gestures</h1>
+    <h1>gestos</h1>
   </div>
   
   <div id="libraries" class="container libs-info">

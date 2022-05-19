@@ -68,7 +68,7 @@
                     </tr>
                     <tr>
                         <td class="gesture-name">Reanudar</td>
-                        <td class="gesture-icon"><img src="../../assets/imgs/icons/ok.png" alt="" srcset=""></td>
+                        <td class="gesture-icon"><img src="/imgs/icons/ok.png" alt="" srcset=""></td>
                     </tr>
 
                     <!-- Numeros -->
@@ -78,11 +78,11 @@
                     </tr>
                     <tr>
                         <td class="gesture-name">tres</td>
-                        <td class="gesture-icon"><img src="../../assets/imgs/icons/three-fingers.png" alt="" srcset=""></td>
+                        <td class="gesture-icon"><img src="/imgs/icons/three-fingers.png" alt="" srcset=""></td>
                     </tr>
                     <tr class="row-grey">
                         <td class="gesture-name">Cuatro</td>
-                        <td class="gesture-icon"><img src="../../assets/imgs/icons/four-fingers.png" alt="" srcset=""></td>
+                        <td class="gesture-icon"><img src="/imgs/icons/four-fingers.png" alt="" srcset=""></td>
                     </tr>
                 </table>
             </div>

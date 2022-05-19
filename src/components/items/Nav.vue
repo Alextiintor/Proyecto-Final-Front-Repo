@@ -11,7 +11,7 @@
 <template>
   <nav>
         <div class="logo" @click="$emit('change-page', 'homePage')">
-            <img src="robotic-arm2.png" alt="">
+            <img src="/robotic-arm2.png" alt="">
             <h1>GESTBOT</h1>
         </div>
 

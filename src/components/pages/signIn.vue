@@ -3,7 +3,7 @@
 
   export default{
     components: {
-      Nav,
+      Nav
     },
     data(){
       return {
@@ -43,15 +43,9 @@
         </form>
       </div>
       <div class="signup">
-        <p>Si no tienes cuenta, dale aqui para crear una</p>
-        <button class="send-btn">Registrate</button>
+        <p style="margin-bottom: 2vh;">Si no tienes cuenta, dale aqui para crear una</p>
+        <button class="send-btn" @click="$emit('main-change-page', 'signUp')">Registrate</button>
       </div>
-    <RoomCard 
-      v-for="robot in robots"
-              :cardNumber="robot.roomNumber"
-      :key="robot"
-      @change-page="(name) => changePage(name)"
-    ></RoomCard>
   </div>
   
 </template>
@@ -105,6 +99,7 @@
     font-family: 'Asap';
   }
   input{
+    padding: 0.5vh 1vh;
     border: 1px solid var(--blue);
     border-radius: 0.35vw;
     width: 20vw;
@@ -113,6 +108,7 @@
   }
 
   .send-btn{
+    padding: 0px;
     width: 12.5vw;
     border: unset;
     height: 6vh;

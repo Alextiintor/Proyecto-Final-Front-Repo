@@ -39,6 +39,9 @@ export default{
   <SignIn v-if='currentPage == "signIn"' 
     @main-change-page="(name) => changePage(name)"
   />
+  <SignUp v-if='currentPage == "signUp"' 
+    @main-change-page="(name) => changePage(name)"
+  />
   <RoomsPage v-if='currentPage == "roomsPage"' 
     @main-change-page="(name) => changePage(name)"
   />

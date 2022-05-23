@@ -233,14 +233,14 @@
         transform: scaleX(-1);
         position: absolute;
         z-index: 1;
-        height: 25vh;
+        height: 30vh;
         width: auto;
     }
 
     .cam canvas {
         position: relative;
         z-index: 2;
-        height: 25vh;
+        height: 30vh;
         width: auto;
     }
 </style>

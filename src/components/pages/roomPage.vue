@@ -1,22 +1,89 @@
-<script setup>
+<script>
+    export default{
+        methods:{
+        changePage: function(page){
+            console.log(page);
+            this.$emit('main-change-page', page);
+        }
+        }
+    }
 </script>
 
 <template>
     <div class="logo">
-        <img src="robotic-arm2.png" alt="">
+        <img src="/robotic-arm2.png" alt="">
         <h1>GESTBOT</h1>
     </div>
+    
+    <button class="btn btn-red btn-salir" @click="$emit('main-change-page', 'roomsPage')"> Salir </button>
     <div class="container">
         <iframe src="" frameborder="0"></iframe>
         <div class="side">
             <div class="cam-container">
                 <div class="cam"></div>
-                <div class="actual-gestures"></div>
+                <div class="actual-gestures">
+                    <table>
+                        <tr class="row-grey">
+                            <td class="name-column">Mano derecha</td>
+                            <td id="right" class="gesture"></td>
+                        </tr>
+                        <tr>
+                            <td class="name-column">Mano izquierda</td>
+                            <td id="left" class="gesture"></td>
+                        </tr>
+                        <tr class="row-grey">
+                            <td class="name-column">Estado</td>
+                            <td id="estatus" class="gesture"></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
             <div class="gesture-legend">
-                <h3></h3>
+                <h3>Leyenda de gestos</h3>
                 <table>
-                    
+                    <!-- EJES -->
+                    <tr class="row-grey">
+                        <td class="gesture-name">Subir eje</td>
+                        <td class="gesture-icon"><i class="fa-solid fa-hand-point-up"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="gesture-name">Bajar eje</td>
+                        <td class="gesture-icon"><i class="fa-solid fa-hand-point-down"></i></td>
+                    </tr>
+
+                    <!-- MOVER -->
+                    <tr class="row-grey">
+                        <td class="gesture-name">Mover derecha</td>
+                        <td class="gesture-icon"><i class="fa-solid fa-hand rotate-right"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="gesture-name">Mover izquierda</td>
+                        <td class="gesture-icon"><i class="fa-solid fa-hand rotate-left"></i></td>
+                    </tr>
+
+                    <!-- ESTADO -->
+                    <tr class="row-grey">
+                        <td class="gesture-name">Pausar</td>
+                        <td class="gesture-icon"><i class="fa-solid fa-hand"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="gesture-name">Reanudar</td>
+                        <td class="gesture-icon"><img src="/imgs/icons/ok.png" alt="" srcset=""></td>
+                    </tr>
+
+                    <!-- Numeros -->
+                    <tr class="row-grey">
+                        <td class="gesture-name">Dos</td>
+                        <td class="gesture-icon"><i class="fa-solid fa-hand-peace"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="gesture-name">tres</td>
+                        <td class="gesture-icon"><img src="/imgs/icons/three-fingers.png" alt="" srcset=""></td>
+                    </tr>
+                    <tr class="row-grey">
+                        <td class="gesture-name">Cuatro</td>
+                        <td class="gesture-icon"><img src="/imgs/icons/four-fingers.png" alt="" srcset=""></td>
+                    </tr>
                 </table>
             </div>
             <div class="local-robot"></div>
@@ -25,14 +92,6 @@
 </template>
 
 <style scoped>
-    .cam-container{
-        border: 1px solid var(--black);
-    }
-    .gesture-legend{
-        border: 1px solid var(--black);
-    }
-
-
     /* Principio */
     h1{
         font-family: "Nova Flat";
@@ -41,10 +100,22 @@
         margin: 0;
         margin-top: 20px;
     }
+
+    table{
+        font-family: 'Asap';
+    }
     .logo{
         position: absolute;
         display: flex;
         align-items: center;
+    }
+    .btn-salir{
+        position: absolute;
+        bottom: 2vh;
+        left: 1vw;
+        width: 7vw;
+        height: 7vh;
+        font-size: 1.5rem;
     }
     .container{
         justify-content: unset !important;
@@ -66,5 +137,84 @@
     .side{
         width: 25vw;
         height: 100vh;
+    }
+    .cam{
+        height: 25vh;
+    }
+    .gesture-legend h3{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-family: "Nova Flat";
+        text-align: center;
+        background-color: var(--blue);
+        color: var(--white);
+    }
+    .gesture-name{
+        width: 70vw;
+    }
+    .gesture-icon{
+        text-align: center;
+        width: 30vw;
+    }
+    .rotate-right {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+    }
+    .rotate-left {
+        transform: rotate(-90deg) scale(-1, 1);
+        /* Legacy vendor prefixes that you probably don't need... */
+
+        /* Safari */
+        -webkit-transform: rotate(-90deg) scale(-1, 1);
+
+        /* Firefox */
+        -moz-transform: rotate(-90deg) scale(-1, 1);
+
+        /* IE */
+        -ms-transform: rotate(-90deg) scale(-1, 1);
+
+        /* Opera */
+        -o-transform: rotate(-90deg) scale(-1, 1);
+
+        position: relative;
+    }
+    table{
+        border-collapse: collapse;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+    }
+    tr{
+        font-size: 1.25rem;
+        height: 3.5vh;
+    }
+    tr .gesture-name{
+        border-right: 2px solid var(--grey);
+    }
+    .row-grey{
+        background-color: var(--grey);
+    }
+    .row-grey .gesture-name, .row-grey .name-column{
+        border-right: 2px solid var(--white);
+    }
+
+    .name-column{
+        font-size: 1.5rem;
+        border-right: 2px solid var(--grey);
+        width: 60vw;
+    }
+    .gesture{
+        font-size: 1.5rem;
+        text-align: center;
+        width: 40vw;
+    }
+    .local-robot{
+        height: 27.8vh;
+        border: 1px solid black;
     }
 </style>

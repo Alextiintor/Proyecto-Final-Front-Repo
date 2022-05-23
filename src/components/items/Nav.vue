@@ -11,16 +11,16 @@
 <template>
   <nav>
         <div class="logo" @click="$emit('change-page', 'homePage')">
-            <img src="robotic-arm2.png" alt="">
+            <img src="/robotic-arm2.png" alt="">
             <h1>GESTBOT</h1>
         </div>
 
         <div v-if="typeNav=='home'" class="nav-links">
-            <a href="#">About</a>
-            <a href="#">About</a>
-            <a href="#">About</a>
+            <a href="#gestures">Gestures</a>
+            <a href="#libraries">Libraries</a>
+            <a href="#aboutUs">About</a>
             <i class="fa-solid fa-earth-europe fa-2xl"></i>
-            <button class="btn" @click="$emit('change-page', 'roomsPage')"> ACCESS </button>
+            <button class="btn btn-blue" @click="$emit('change-page', 'signIn')"> ACCESS </button>
         </div>
 
         <div v-else-if="typeNav=='rooms'" class="nav-icons">

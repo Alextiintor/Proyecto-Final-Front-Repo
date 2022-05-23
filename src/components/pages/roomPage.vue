@@ -1,10 +1,13 @@
 <script>
     export default{
         methods:{
-        changePage: function(page){
-            console.log(page);
-            this.$emit('main-change-page', page);
-        }
+            changePage: function(page){
+                console.log(page);
+                this.$emit('main-change-page', page);
+            }
+        },
+        mounted() {
+            import('../../robot/robot')
         }
     }
 </script>

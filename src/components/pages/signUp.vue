@@ -55,7 +55,7 @@
                 <span for="">Contraseña</span>
                 <input type="password" name="" id="">
             </div>
-            <input class="send-btn" style="margin-top: 2vh;" type="submit" value="Registrar">
+            <button class="btn btn-blue" style="margin-top: 2vh;" @click="$emit('main-change-page', 'roomsPage')">Registrar</button>
         </form>
       </div>    
   </div>

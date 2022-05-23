@@ -148,7 +148,7 @@
         height: 100vh;
     }
     .cam{
-        height: 25vh;
+        height: 30vh;
     }
     .gesture-legend h3{
         padding-top: 5px;
@@ -193,6 +193,7 @@
         position: relative;
     }
     table{
+        z-index: 10;
         border-collapse: collapse;
         margin: 0px;
         padding: 0px;
@@ -215,15 +216,15 @@
     .name-column{
         font-size: 1.5rem;
         border-right: 2px solid var(--grey);
-        width: 30vw;
+        width: 35vw;
     }
     .gesture{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-align: center;
         width: 40vw;
     }
     .local-robot{
-        height: 27.8vh;
+        height: 22.8vh;
         border: 1px solid black;
     }
 

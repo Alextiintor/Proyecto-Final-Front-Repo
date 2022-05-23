@@ -126,12 +126,12 @@ async function main() {
       //Mover el robot local
       moveLocalRobot();
       let stateText = isStoped ? "Pausado" : "Funcionando";
-      state.textContent = "Estado: "+stateText 
+      state.textContent = stateText 
 
     } else {
       //Establecer el texto por defecto cuando no hay ninguna mano en pantalla
-      left_result.textContent = "Mano Izquierda no detectada"
-      right_result.textContent = "Mano Derecha no detectada"
+      left_result.textContent = "No detectada"
+      right_result.textContent = "No detectada"
     }
 
     //Crear loop
@@ -268,7 +268,7 @@ function detect1Hand(){
   if (estimatedLeftHandGesture){
     if(estimatedLeftHandGesture.gestures[0]){
       leftHandGesture = leftImproveGestureDetection(estimatedLeftHandGesture.gestures[0].name)
-      rightHandGesture = "Mano derecha no detectada"
+      rightHandGesture = "No detectada"
     } else {
       leftHandGesture = "idle"
     }

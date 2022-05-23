@@ -42,7 +42,7 @@
   <div class="container">
     <RoomCard 
       v-for="robot in robots"
-              :cardNumber="robot.roomNumber"
+      :cardNumber="robot.roomNumber"
       :key="robot"
       @change-page="(name) => changePage(name)"
     ></RoomCard>

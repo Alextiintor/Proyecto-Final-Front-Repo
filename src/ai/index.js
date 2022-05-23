@@ -125,7 +125,7 @@ async function main() {
       //Mover el robot local
       moveLocalRobot();
       let stateText = isStoped ? "Pausado" : "Funcionando";
-      state.textContent = "Estado: "+stateText 
+      state.textContent = stateText 
 
     } else {
       //Establecer el texto por defecto cuando no hay ninguna mano en pantalla

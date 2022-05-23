@@ -5,6 +5,9 @@
     --black: #08090A;
     --grey: #EBEBEB;
 }
+body{
+    overflow-x: hidden;
+}
 
 *{
     margin: 0;

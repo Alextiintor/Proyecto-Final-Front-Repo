@@ -30,7 +30,7 @@
             <div class="icon-container"><i class="fa-solid fa-robot"></i></div>
             <h1>Iniciar session</h1>
         </div>
-        <form action="" method="post">
+        <form action="" method="">
             <div class="item-form" style="margin-top: 2vh;">
                 <span for="">Email</span>
                 <input type="email" name="" id="">
@@ -39,12 +39,12 @@
                 <span for="">Contraseña</span>
                 <input type="password" name="" id="">
             </div>
-            <input class="send-btn" style="margin-top: 2vh;" type="submit" value="Iniciar">
+            <button class="btn btn-blue" style="margin-top: 2vh;" @click="$emit('main-change-page', 'roomsPage')">Iniciar</button>
         </form>
       </div>
       <div class="signup">
         <p style="margin-bottom: 2vh;">Si no tienes cuenta, dale aqui para crear una</p>
-        <button class="send-btn" @click="$emit('main-change-page', 'signUp')">Registrate</button>
+        <button class="btn btn-blue" @click="$emit('main-change-page', 'signUp')">Registrate</button>
       </div>
   </div>
   

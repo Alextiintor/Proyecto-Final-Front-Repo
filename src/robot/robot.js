@@ -100,7 +100,7 @@ let look_z = 0;
     // CALL THE LOAD METHOD, PASS THE ABSOLUTE OR RELATIVE PATH
     // TO THE *.DAE FILE AS THE FIRST ARGUMENT, AND A DONE CALLBACK
     // AS THE SECOND ARGUMENT
-    loader.load("./ur10_2.dae", function (result) {
+    loader.load("./src/robot/public/ur10_2.dae", function (result) {
         // adding the child that I want to the scene
         scene.add(result.scene);
         window.robot = result.scene;
@@ -216,9 +216,9 @@ let look_z = 0;
 }());
 
 function print_model_information(){
-    var controls = document.getElementById("controls");
-    // panel.innerHTML="Works!!";
-    controls.innerHTML="";
+    // var controls = document.getElementById("controls");
+    // // panel.innerHTML="Works!!";
+    // controls.innerHTML="";
     var componentsArray = [];
     componentsArray = recursive_robot_print(window.robot, componentsArray);
     window.robot_parts = componentsArray;

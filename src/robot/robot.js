@@ -100,7 +100,7 @@ let look_z = 0;
     // CALL THE LOAD METHOD, PASS THE ABSOLUTE OR RELATIVE PATH
     // TO THE *.DAE FILE AS THE FIRST ARGUMENT, AND A DONE CALLBACK
     // AS THE SECOND ARGUMENT
-    loader.load("./src/robot/public/ur10_2.dae", function (result) {
+    loader.load("./ur10_2.dae", function (result) {
         // adding the child that I want to the scene
         scene.add(result.scene);
         window.robot = result.scene;

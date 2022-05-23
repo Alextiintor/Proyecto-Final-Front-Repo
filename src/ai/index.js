@@ -9,8 +9,7 @@ import { io } from 'socket.io-client'
 /**
  * Initialize Variables
  */
-const socket = "";
-// const socket = io("localhost:8000");
+const socket = io("localhost:8000");
 window.lastMovement = Date.now()
 window.finalGestureName = "idle"
 window.leftHandGesture = "idle"
@@ -89,11 +88,11 @@ const config = {
  */
 async function main() {
   //Cargar modelo
-  const model = await handPoseDetection.SupportedModels.MediaPipeHands;
+  const model = handPoseDetection.SupportedModels.MediaPipeHands;
   const detectorConfig = {
-    runtime: 'mediapipe', // or 'tfjs'
+    runtime: 'tfjs', // or 'tfjs'
     maxHands: 2,
-    solutionPath: './node_modules/@mediapipe/hands',
+    solution: './node_modules/@tensorflow-models/hand-pose-detection',
     modelType: 'full'
   };
   const detector = await handPoseDetection.createDetector(model, detectorConfig);
@@ -130,8 +129,8 @@ async function main() {
 
     } else {
       //Establecer el texto por defecto cuando no hay ninguna mano en pantalla
-      left_result.textContent = "Mano Izquierda no detectada"
-      right_result.textContent = "Mano Derecha no detectada"
+      left_result.textContent = "No detectada"
+      right_result.textContent = "No detectada"
     }
 
     //Crear loop
@@ -235,7 +234,7 @@ function setHandsKeyPoints(predictions){
        * Estimate right hand Gestures
        */
       estimatedRightHandGesture = fullGE.estimate(rightHandKeypointsArray, 9)
-      console.log(estimatedRightHandGesture);
+      // console.log(estimatedRightHandGesture);
     }
   }
 }
@@ -268,7 +267,7 @@ function detect1Hand(){
   if (estimatedLeftHandGesture){
     if(estimatedLeftHandGesture.gestures[0]){
       leftHandGesture = leftImproveGestureDetection(estimatedLeftHandGesture.gestures[0].name)
-      rightHandGesture = "Mano derecha no detectada"
+      rightHandGesture = "No detectada"
     } else {
       leftHandGesture = "idle"
     }
@@ -434,12 +433,12 @@ function fixInfiniteRotation(){
     //position y
     if (parseFloat(window.actual_robot_move.y) < -6.28) {
       window.robot_parts[window.actualAxis].rotation.y = parseFloat(window.actual_robot_move.y)+6.28;
-      console.log(window.actual_robot_move.y)
+      // console.log(window.actual_robot_move.y)
     }
 
     if (parseFloat(window.actual_robot_move.y) > 6.28) {
       window.robot_parts[window.actualAxis].rotation.y = parseFloat(window.actual_robot_move.y)-6.28;
-      console.log(window.actual_robot_move.y)
+      // console.log(window.actual_robot_move.y)
     }
   } else {
 
@@ -448,23 +447,23 @@ function fixInfiniteRotation(){
       //position y
       if (parseFloat(window.actual_robot_move.y) < -6.28) {
         window.robot_parts[window.actualAxis].children[posPivot].rotation.y = parseFloat(window.actual_robot_move.y)+6.28;
-        console.log(window.actual_robot_move.y)
+        // console.log(window.actual_robot_move.y)
       }
 
       if (parseFloat(window.actual_robot_move.y) > 6.28) {
         window.robot_parts[window.actualAxis].children[posPivot].rotation.y = parseFloat(window.actual_robot_move.y)-6.28;
-        console.log(window.actual_robot_move.y)
+        // console.log(window.actual_robot_move.y)
       }
     }else{
       //position z
       if (parseFloat(window.actual_robot_move.z) < -6.28) {
         window.robot_parts[window.actualAxis].children[posPivot].rotation.z = parseFloat(window.actual_robot_move.z)+6.28;
-        console.log(window.actual_robot_move.z)
+        // console.log(window.actual_robot_move.z)
       }
 
       if (parseFloat(window.actual_robot_move.z) > 6.28) {
         window.robot_parts[window.actualAxis].children[posPivot].rotation.z = parseFloat(window.actual_robot_move.z)-6.28;
-        console.log(window.actual_robot_move.z)
+        // console.log(window.actual_robot_move.z)
       }
     }
   }
@@ -593,14 +592,6 @@ function drawHandsPoints(predictions){
     })
   });
 }
-
-/**
- * When content loaded starts the app.
- */
-window.addEventListener("DOMContentLoaded", () => {
-  console.log("Prueba1");
-  
-});
 
 initCamera(
   config.video.width, config.video.height, config.video.fps

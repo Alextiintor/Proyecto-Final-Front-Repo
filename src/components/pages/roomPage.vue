@@ -89,7 +89,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="local-robot"></div>
+            <div class="local-robot" id="robot"></div>
         </div>
     </div>
 </template>

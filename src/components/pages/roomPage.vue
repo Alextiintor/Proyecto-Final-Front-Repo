@@ -209,7 +209,7 @@
     .name-column{
         font-size: 1.5rem;
         border-right: 2px solid var(--grey);
-        width: 60vw;
+        width: 30vw;
     }
     .gesture{
         font-size: 1.5rem;

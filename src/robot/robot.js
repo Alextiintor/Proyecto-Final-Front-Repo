@@ -5,7 +5,6 @@ import * as THREE from 'three'
 import { OrbitControls, MapControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { ColladaLoader } from 'three/examples/jsm/loaders/ColladaLoader.js';
 import * as dat from 'dat.gui'
-// import './public/ur10_2.dae'
 
 // import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/GLTFLoader.js'; 
 // import { RGBELoader } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/RGBELoader.js'; 
@@ -111,7 +110,7 @@ let look_z = 0;
         window.dae_obj.library.visualScenes.ID2.build.quaternion.x=0;
 
 
-        //print_model_information();
+        print_model_information();
         
         /**
          * Crea los ejes que rotaran, arreglando asi el fallo de rotacion sobre el centro de la escena
@@ -217,9 +216,9 @@ let look_z = 0;
 }());
 
 function print_model_information(){
-    var controls = document.getElementById("controls");
-    // panel.innerHTML="Works!!";
-    controls.innerHTML="";
+    // var controls = document.getElementById("controls");
+    // // panel.innerHTML="Works!!";
+    // controls.innerHTML="";
     var componentsArray = [];
     componentsArray = recursive_robot_print(window.robot, componentsArray);
     window.robot_parts = componentsArray;

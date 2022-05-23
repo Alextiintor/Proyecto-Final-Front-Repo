@@ -8,6 +8,7 @@
         },
         mounted() {
             import('../../robot/robot')
+            import('../../ai/index')
         }
     }
 </script>
@@ -23,7 +24,12 @@
         <iframe src="" frameborder="0"></iframe>
         <div class="side">
             <div class="cam-container">
-                <div class="cam"></div>
+                <div class="cam">
+                    <div class="video">
+                        <video id="pose-video" class="layer" playsinline></video>
+                        <canvas id="pose-canvas" class="layer"></canvas>
+                    </div>
+                </div>
                 <div class="actual-gestures">
                     <table>
                         <tr class="row-grey">
@@ -36,7 +42,7 @@
                         </tr>
                         <tr class="row-grey">
                             <td class="name-column">Estado</td>
-                            <td id="estatus" class="gesture"></td>
+                            <td id="state" class="gesture"></td>
                         </tr>
                     </table>
                 </div>
@@ -219,5 +225,21 @@
     .local-robot{
         height: 27.8vh;
         border: 1px solid black;
+    }
+
+    .cam video{
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        position: absolute;
+        z-index: 1;
+        height: 30vh;
+        width: auto;
+    }
+
+    .cam canvas {
+        position: relative;
+        z-index: 2;
+        height: 30vh;
+        width: auto;
     }
 </style>

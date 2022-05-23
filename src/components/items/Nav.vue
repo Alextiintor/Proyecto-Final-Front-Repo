@@ -30,7 +30,7 @@
         </div>
 
         <div v-else class="nav-links">
-            <i id="close" class="fa-solid fa-rectangle-xmark"></i>
+            <i id="close" class="fa-solid fa-rectangle-xmark" @click="$emit('change-page', 'homePage')"></i>
         </div>
   </nav>
 </template>

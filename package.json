@@ -12,7 +12,7 @@
     "dat.gui": "^0.7.9",
     "regenerator-runtime": "^0.13.9",
     "three": "^0.140.2",
-    "vue": "^3.2.25",
+    "vue": "^3.2.36",
     "vue-ssr-carousel": "^1.4.0",
     "vue-template-compiler": "^2.6.14"
   },

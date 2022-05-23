@@ -5,6 +5,7 @@ import * as THREE from 'three'
 import { OrbitControls, MapControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { ColladaLoader } from 'three/examples/jsm/loaders/ColladaLoader.js';
 import * as dat from 'dat.gui'
+// import './public/ur10_2.dae'
 
 // import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/GLTFLoader.js'; 
 // import { RGBELoader } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/RGBELoader.js'; 
@@ -100,7 +101,7 @@ let look_z = 0;
     // CALL THE LOAD METHOD, PASS THE ABSOLUTE OR RELATIVE PATH
     // TO THE *.DAE FILE AS THE FIRST ARGUMENT, AND A DONE CALLBACK
     // AS THE SECOND ARGUMENT
-    loader.load("./ur10_2.dae", function (result) {
+    loader.load("./src/robot/public/ur10_2.dae", function (result) {
         // adding the child that I want to the scene
         scene.add(result.scene);
         window.robot = result.scene;
@@ -110,7 +111,7 @@ let look_z = 0;
         window.dae_obj.library.visualScenes.ID2.build.quaternion.x=0;
 
 
-        print_model_information();
+        //print_model_information();
         
         /**
          * Crea los ejes que rotaran, arreglando asi el fallo de rotacion sobre el centro de la escena

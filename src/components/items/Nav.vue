@@ -16,9 +16,10 @@
         </div>
 
         <div v-if="typeNav=='home'" class="nav-links">
+            <a href="#demo">Demostration</a>
             <a href="#libraries">Libraries</a>
             <a href="#models">Models</a>
-            <a href="#aboutUs">About Us</a>
+            <!-- <a href="#aboutUs">About Us</a> -->
             <i class="fa-solid fa-earth-europe fa-2xl"></i>
             <button class="btn btn-blue" @click="$emit('change-page', 'signIn')"> ACCESS </button>
         </div>
@@ -125,9 +126,15 @@
     #close{
         color: var(--blue);
     }
-    /*media (max-width: 1400px) {
+    
+    @media (max-width: 1400px) {
         .nav-links{
-            display: none;
+            margin-right: 16px;
         }
-    } */
+
+        .nav-links a {
+        font-size: 1.5rem;
+        margin-right: 50px;
+    }
+    }
 </style>

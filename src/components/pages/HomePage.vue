@@ -53,14 +53,14 @@
           <img src="../../../public/imgs/bookshelf.jpg" alt="" style="border-radius: 5px 5px 110px 5px;">
           <h1>Tensorflow js</h1><br>
           <p>
-            <a href="https://www.tensorflow.org/" target="_blank">Tensorflow</a> es una libreria open-source de Google para el Deep Learning, de las mas importante del sector de la inteligencia arificial. La cual nos ha permitido usar modelos ya entrenados que nos han facilitado el trabajo de deteccion de manos.
+            <a href="https://www.tensorflow.org/" target="_blank">Tensorflow</a> is an open-source library from Google for Deep Learning, it is one of the most important in the artificial intelligence sector. Which has allowed us to use already trained models that have facilitated the work of hand detection.
           </p>
         </div>
         <div class="library">
           <img src="../../../public/imgs/bookshelf.jpg" alt="" style="border-radius: 110px 5px 5px 5px;">
           <h1>Fingerpose</h1><br>
           <p>
-            <a href="https://github.com/andypotato/fingerpose" target="_blank">Fingerpose</a>  es una libreria hecha por <a href="https://github.com/andypotato" target="_blank">Andreas Schallwig</a>, la cual nos ha permitido crear los gestos que necesitabamos para mover el robot y despues compararlos con los gestos que capturaba la IA.
+            <a href="https://github.com/andypotato/fingerpose" target="_blank">Fingerpose</a> is a javascript library made by <a href="https://github.com/andypotato" target="_blank">Andreas Schallwig</a>, which has allowed us to create the gestures we needed and then compare them with the gestures that the AI ​​captured. All this to move the robot arm.
           </p>
         </div>
         <hr>
@@ -82,7 +82,7 @@
           <img src="../../../public/imgs/bookshelf.jpg" alt="" style="border-radius: 110px 5px 5px 5px;">
           <h1>Hands model</h1><br>
           <p>
-            El modelo <a href="https://google.github.io/mediapipe/solutions/hands.html" target="_blank">Hands</a> ha sido desarrollado por mediapipe, este modelo nos ha permitido realizar pruebas para crear los gestos de cada mano por separado.
+            <a href="https://google.github.io/mediapipe/solutions/hands.html" target="_blank">Hands</a> model has been developed by mediapipe, this model has allowed us to carry out tests to create the gestures of each hand separately.
           </p>
         </div>
         <hr>

@@ -1,5 +1,6 @@
 import '@tensorflow/tfjs-core';
-import '@tensorflow/tfjs-backend-webgl';
+// import '@tensorflow/tfjs-backend-webgl';
+import '@tensorflow/tfjs-backend-wasm'
 import '@mediapipe/hands';
 import * as handPoseDetection from '@tensorflow-models/hand-pose-detection';
 import * as fp from "fingerpose";

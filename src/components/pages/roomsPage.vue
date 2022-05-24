@@ -12,15 +12,6 @@
         robots: {
           firstRobot: {
             roomNumber: 1
-          },
-          secondRobot: {
-            roomNumber: 2
-          },
-          thirdRobot: {
-            roomNumber: 3
-          },
-          fourthRobot: {
-            roomNumber: 4
           }
         }
       }

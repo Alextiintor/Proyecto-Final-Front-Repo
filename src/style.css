@@ -59,7 +59,9 @@ p{
     cursor: pointer;
 }
 
-
+.hidden{
+    display: none !important;
+}
 
 .container{
     width: 100%;

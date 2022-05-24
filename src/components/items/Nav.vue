@@ -16,9 +16,9 @@
         </div>
 
         <div v-if="typeNav=='home'" class="nav-links">
-            <a href="#gestures">Gestures</a>
             <a href="#libraries">Libraries</a>
-            <a href="#aboutUs">About</a>
+            <a href="#models">Models</a>
+            <a href="#aboutUs">About Us</a>
             <i class="fa-solid fa-earth-europe fa-2xl"></i>
             <button class="btn btn-blue" @click="$emit('change-page', 'signIn')"> ACCESS </button>
         </div>

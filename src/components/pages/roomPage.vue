@@ -37,7 +37,7 @@
     <button class="btn btn-red btn-salir" @click="$emit('main-change-page', 'roomsPage')"> Salir </button>
 
     <div class="container">
-        <iframe src="http://localhost:8085" frameborder="0"></iframe>
+        <iframe src="http://robot.gestbot.es" frameborder="0"></iframe>
         <div class="side">
             <div class="cam-container">
                 <div class="cam">

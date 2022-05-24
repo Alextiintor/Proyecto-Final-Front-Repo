@@ -16,7 +16,6 @@
         this.$emit('main-change-page', page);
       },
       signIn: function(){
-        alert("hola");
         let email = $('#email').val()
         let paswd = $('#pasword').val()
         

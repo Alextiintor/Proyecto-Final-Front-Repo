@@ -1,9 +1,19 @@
 <script>
     export default{
+        data(){
+            return {
+                modal: true
+            }
+        },
         methods:{
             changePage: function(page){
                 console.log(page);
                 this.$emit('main-change-page', page);
+            },
+            closeModal: function(){
+                console.log("close modal")
+                this.modal = false;
+                
             }
         },
         mounted() {
@@ -19,9 +29,9 @@
         <h1>GESTBOT</h1>
     </div>
 
-    <div class="modal-advise">
+    <div class="modal-advise" v-if="modal==true">
         <p>Para el correcto funcionamiento de la página, asegurese de tener activada la <em>aceleracion por hardware</em> <a href="https://support.google.com/chrome/thread/12887258/activar-o-desactivar-la-aceleración-por-hardware-en-chrome?hl=es" target="_blank">Como activar</a>.</p>
-        <i id="close" class="fa-solid fa-rectangle-xmark"></i>
+        <i id="close" class="fa-solid fa-rectangle-xmark" @click="closeModal"></i>
     </div>
 
     <button class="btn btn-red btn-salir" @click="$emit('main-change-page', 'roomsPage')"> Salir </button>
@@ -138,7 +148,11 @@
     }
     #close{
         font-size: 20px;
-        color: var(--black);
+        color: var(--blue);
+    }
+    #close:hover{
+        cursor: pointer;
+        color: var(--red);
     }
     .btn-salir{
         position: absolute;

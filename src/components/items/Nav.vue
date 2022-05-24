@@ -20,15 +20,15 @@
             <a href="#libraries">Libraries</a>
             <a href="#models">Models</a>
             <!-- <a href="#aboutUs">About Us</a> -->
-            <i class="fa-solid fa-earth-europe fa-2xl"></i>
+            <!-- <i class="fa-solid fa-earth-europe fa-2xl"></i> -->
             <button class="btn btn-blue" @click="$emit('change-page', 'roomsPage')"> ACCESS </button>
         </div>
 
-        <div v-else-if="typeNav=='rooms'" class="nav-icons">
+        <!-- <div v-else-if="typeNav=='rooms'" class="nav-icons">
             <div class="icon-container" style="width: 50px; height: 50px;"><i class="fa-solid fa-wrench" style="font-size: 2rem;"></i></div>
             <div style="width: 20px;"></div>
             <div class="icon-container"><i class="fa-solid fa-robot"></i></div>
-        </div>
+        </div> -->
 
         <div v-else class="nav-links">
             <i id="close" class="fa-solid fa-rectangle-xmark" @click="$emit('change-page', 'homePage')"></i>

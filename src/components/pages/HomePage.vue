@@ -95,77 +95,32 @@
 
   <footer>
     <div class="footer-info-left">
-      <ul>
-        <li>item of left side footer</li>
-        <li>item of left side footer</li>
-        <li>item of left side footer</li>
-        <li>item of left side footer</li>
-        <li>item of left side footer</li>
-        <li>item of left side footer</li>
-        <li>item of left side footer</li>
-        <li>item of left side footer</li>
-        <li>item of left side footer</li>
-        <li>item of left side footer</li>
-        <li>item of left side footer</li>
-        <li>item of left side footer</li>
-        <li>item of left side footer</li>
-        <li>item of left side footer</li>
-        <li>item of left side footer</li>
-        <li>item of left side footer</li>
-        <li>item of left side footer</li>
-        <li>item of left side footer</li>
-        <li>item of left side footer</li>
-        <li>item of left side footer</li>
-        <li>item of left side footer</li>
-        <li>item of left side footer</li>
-      </ul>
+      <h1 style="text-align: center;">GestBot</h1><br>
+      <p style="text-align: center;">The final project of DAW</p><br>
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <p>INS Badia del Vallès</p>
+        <img src="/imgs/logoBadia.png" alt="" style="width: 5vw; height: 14vh;">
+      </div>
+      
     </div>
     <div class="footer-info-right">
       <div class="footer-info-up">
         <div>
-          <ul>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
+          <h1>About</h1><br>
+          <ul style="margin-left: 2vw;">
+            <li><a href="#demo">Project</a></li>
+            <li><a href="#libraries">Libraries</a></li>
+            <li><a href="#models">Models</a></li>
           </ul>
         </div>
         <div>
-          <ul>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-          </ul>
+          <h1>Members</h1><br>
+          <p>Alex Gallardo Escobar</p>
+          <p>Oscar Adell Acon</p>
         </div>
         <div>
-          <ul>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-            <li>item of left side footer</li>
-          </ul>
+          <h1>GestBot</h1><br>
+          <a @click="$emit('main-change-page', 'roomsPage')">Move your robot</a>
         </div>
       </div>
       <div class="footer-info-down">Web designed by Alex Gallardo and Oscar Adell</div>
@@ -183,15 +138,33 @@ footer{
   display: flex;
   padding: 5vw;
 }
+
+footer a{
+  color: var(--black);
+}
+footer a:hover{
+  color: var(--blue);
+}
+
+footer ul{
+  margin-left: 2vw;
+}
+footer li {
+  text-decoration: none;
+  margin-bottom: 0.5vh;
+}
 .footer-info-left{
+  padding-top: 0.5vh;
+  padding-left: 0.5vw;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
   width: 20vw;
   height: 55vh;
   margin-right: 5vw;
   background-color: var(--white);
-  border: 2px solid var(--blue);
+  /* border: 2px solid var(--blue); */
   border-radius: 8px;
 }
 .footer-info-right{
@@ -211,21 +184,25 @@ footer{
   width: 15vw;
   height: 35vh;
   background-color: var(--white);
-  border: 2px solid var(--blue);
+  /* border: 2px solid var(--blue); */
   border-radius: 8px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  padding-top: 0.5vh;
+  padding-left: 0.5vw;
+  /* align-items: center;
+  justify-content: center; */
 }
 .footer-info-down{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   width: 60vw;
   height: 10vh;
   background-color: var(--white);
-  border: 2px solid var(--blue);
+  /* border: 2px solid var(--blue); */
   border-radius: 8px;
 }
 /* =========================================front-page========================================= */

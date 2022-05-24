@@ -62,7 +62,9 @@ p{
 .hidden{
     display: none !important;
 }
-
+a {
+    color: var(--blue);
+}
 .container{
     width: 100%;
     display: flex;

@@ -14,10 +14,18 @@
       changePage: function(page){
         console.log(page);
         this.$emit('main-change-page', page);
+      },
+      signIn: function(){
+        alert("hola");
+        let email = $('#email').val()
+        let paswd = $('#pasword').val()
+        
+        this.$emit('main-change-page', 'roomsPage')
       }
     }
   }
 
+  
 </script>
 
 <template>
@@ -33,18 +41,18 @@
         <form action="" method="">
             <div class="item-form" style="margin-top: 2vh;">
                 <span for="">Email</span>
-                <input type="email" name="" id="">
+                <input type="email" name="" id="email">
             </div>
             <div class="item-form">
                 <span for="">Contraseña</span>
-                <input type="password" name="" id="">
+                <input type="password" name="" id="password">
             </div>
-            <button class="btn btn-blue" style="margin-top: 2vh;" @click="$emit('main-change-page', 'roomsPage')">Iniciar</button>
+            <div class="btn btn-blue" style="margin-top: 2vh;" @click="signIn">Iniciar</div>
         </form>
       </div>
       <div class="signup">
         <p style="margin-bottom: 2vh;">Si no tienes cuenta, dale aqui para crear una</p>
-        <button class="btn btn-blue" @click="$emit('main-change-page', 'signUp')">Registrate</button>
+        <button class="btn btn-blue" >Registrate</button>
       </div>
   </div>
   

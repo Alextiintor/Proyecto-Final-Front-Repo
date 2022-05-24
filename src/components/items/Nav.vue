@@ -21,7 +21,7 @@
             <a href="#models">Models</a>
             <!-- <a href="#aboutUs">About Us</a> -->
             <i class="fa-solid fa-earth-europe fa-2xl"></i>
-            <button class="btn btn-blue" @click="$emit('change-page', 'signIn')"> ACCESS </button>
+            <button class="btn btn-blue" @click="$emit('change-page', 'roomsPage')"> ACCESS </button>
         </div>
 
         <div v-else-if="typeNav=='rooms'" class="nav-icons">
@@ -126,7 +126,7 @@
     #close{
         color: var(--blue);
     }
-    
+
     @media (max-width: 1400px) {
         .nav-links{
             margin-right: 16px;

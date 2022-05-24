@@ -51,13 +51,17 @@
         <hr>
         <div class="library">
           <img src="../../../public/imgs/bookshelf.jpg" alt="" style="border-radius: 5px 5px 110px 5px;">
-          <h1>Library 1</h1><br>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laboriosam magnam fugit, obcaecati quasi temporibus, architecto recusandae commodi possimus itaque, quia dignissimos! Repellendus similique modi quo dolorem provident totam sed?</p>
+          <h1>Tensorflow js</h1><br>
+          <p>
+            <a href="https://www.tensorflow.org/" target="_blank">Tensorflow</a> es una libreria open-source de Google para el Deep Learning, de las mas importante del sector de la inteligencia arificial. La cual nos ha permitido usar modelos ya entrenados que nos han facilitado el trabajo de deteccion de manos.
+          </p>
         </div>
         <div class="library">
           <img src="../../../public/imgs/bookshelf.jpg" alt="" style="border-radius: 110px 5px 5px 5px;">
-          <h1>Library 2</h1><br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab excepturi sint perspiciatis numquam, hic in vero sequi debitis impedit maiores, soluta ea voluptate? Laborum quibusdam, labore rem dolor animi modi.</p>
+          <h1>Fingerpose</h1><br>
+          <p>
+            <a href="https://github.com/andypotato/fingerpose" target="_blank">Fingerpose</a>  es una libreria hecha por <a href="https://github.com/andypotato" target="_blank">Andreas Schallwig</a>, la cual nos ha permitido crear los gestos que necesitabamos para mover el robot y despues compararlos con los gestos que capturaba la IA.
+          </p>
         </div>
         <hr>
     </div>
@@ -69,13 +73,17 @@
         <hr>
         <div class="library">
           <img src="../../../public/imgs/bookshelf.jpg" alt="" style="border-radius: 5px 5px 110px 5px;">
-          <h1>Model 1</h1><br>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laboriosam magnam fugit, obcaecati quasi temporibus, architecto recusandae commodi possimus itaque, quia dignissimos! Repellendus similique modi quo dolorem provident totam sed?</p>
+          <h1>Hand Pose Detection</h1><br>
+          <p>
+            <a href="https://blog.tensorflow.org/2021/11/3D-handpose.html" target="_blank">Hand Pose detection</a> es un modelo hecho por un grupo de desarrolladores, que nos permite la deteccion de ambas manos en tiempo real. Lo cual nos ha servido para poder crear gestos diferentes para cada mano.
+          </p>
         </div>
         <div class="library">
           <img src="../../../public/imgs/bookshelf.jpg" alt="" style="border-radius: 110px 5px 5px 5px;">
-          <h1>Model 2</h1><br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab excepturi sint perspiciatis numquam, hic in vero sequi debitis impedit maiores, soluta ea voluptate? Laborum quibusdam, labore rem dolor animi modi.</p>
+          <h1>Hands model</h1><br>
+          <p>
+            El modelo <a href="https://google.github.io/mediapipe/solutions/hands.html" target="_blank">Hands</a> ha sido desarrollado por mediapipe, este modelo nos ha permitido realizar pruebas para crear los gestos de cada mano por separado.
+          </p>
         </div>
         <hr>
     </div>

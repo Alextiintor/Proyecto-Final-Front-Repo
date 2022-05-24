@@ -18,8 +18,14 @@
         <img src="/robotic-arm2.png" alt="">
         <h1>GESTBOT</h1>
     </div>
-    
+
+    <div class="modal-advise">
+        <p>Para el correcto funcionamiento de la página, asegurese de tener activada la <em>aceleracion por hardware</em> <a href="https://support.google.com/chrome/thread/12887258/activar-o-desactivar-la-aceleración-por-hardware-en-chrome?hl=es" target="_blank">Como activar</a>.</p>
+        <i id="close" class="fa-solid fa-rectangle-xmark"></i>
+    </div>
+
     <button class="btn btn-red btn-salir" @click="$emit('main-change-page', 'roomsPage')"> Salir </button>
+
     <div class="container">
         <iframe src="" frameborder="0"></iframe>
         <div class="side">
@@ -117,6 +123,22 @@
         position: absolute;
         display: flex;
         align-items: center;
+    }
+    .modal-advise{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        top: 2vh;
+        left: 20vw;
+        width: 50vw;
+        background-color: var(--white);
+        border: 2px solid var(--blue);
+        border-radius: 10px;
+        padding: 1.5vh 1vw;
+    }
+    #close{
+        font-size: 20px;
+        color: var(--black);
     }
     .btn-salir{
         position: absolute;

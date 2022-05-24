@@ -14,6 +14,9 @@
       changePage: function(page){
         console.log(page);
         this.$emit('main-change-page', page);
+      },
+      signup: function(){
+        let username = "";
       }
     }
   }
@@ -33,11 +36,11 @@
         <form action="" method="post">
             <div class="item-form" style="margin-top: 2vh;">
                 <span for="">Nombre</span>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="name">
             </div>
             <div class="item-form">
                 <span for="">Apellidos</span>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="lastname">
             </div>
             <div class="item-form">
                 <span for="">DNI</span>

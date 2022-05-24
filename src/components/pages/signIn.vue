@@ -16,9 +16,17 @@
         this.$emit('main-change-page', page);
       },
       signIn: function(){
-        let email = $('#email').val()
+        let username_email = $('#email').val()
         let paswd = $('#pasword').val()
-        
+        $.ajax({
+          method: "GET",
+          URL: `api.gestbot.es/api/users/${username_email}`
+        }).done(function(data) {
+          let result = bcrypt.compare(paswd, data.password)
+          console.log(result);
+        }).fail(function(msg) {
+          console.log(msg);
+        })
         this.$emit('main-change-page', 'roomsPage')
       }
     }

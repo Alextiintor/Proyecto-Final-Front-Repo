@@ -16,7 +16,29 @@
         this.$emit('main-change-page', page);
       },
       signup: function(){
-        let username = "";
+        let data = {
+          username: $('#username').val(),
+          name: $('#name').val(),
+          lastnames: $('#lastnames').val(),
+          dni: $('#dni').val(),
+          birthDate: $('#birthdate').val(),
+          email: $('#email').val(),
+          password: $('#password').val(),
+        }
+        
+
+        $.ajax({
+          method: "POST",
+          URL: `https://api.gestbot.es/api/users/`,
+          data: data
+        }).done(function(data) {
+          console.log(result);
+          this.$emit('main-change-page', 'roomsPage');
+        }).fail(function(msg) {
+          console.log(msg);
+        })
+
+        console.log(data)
       }
     }
   }
@@ -35,30 +57,34 @@
         </div>
         <form action="" method="post">
             <div class="item-form" style="margin-top: 2vh;">
+                <span for="">Nombre de usuario</span>
+                <input type="text" name="" id="username">
+            </div>
+            <div class="item-form">
                 <span for="">Nombre</span>
                 <input type="text" name="" id="name">
             </div>
             <div class="item-form">
                 <span for="">Apellidos</span>
-                <input type="text" name="" id="lastname">
+                <input type="text" name="" id="lastnames">
             </div>
             <div class="item-form">
                 <span for="">DNI</span>
-                <input type="text" name="" id="" max="9">
+                <input type="text" name="" id="dni" max="9">
             </div>
             <div class="item-form">
                 <span for="">Fecha de nacimiento</span>
-                <input type="Date" name="" id="">
+                <input type="Date" name="" id="birthdate">
             </div>
             <div class="item-form">
                 <span for="">Email</span>
-                <input type="email" name="" id="">
+                <input type="email" name="" id="email">
             </div>
             <div class="item-form">
                 <span for="">Contraseña</span>
-                <input type="password" name="" id="">
+                <input type="password" name="" id="password">
             </div>
-            <button class="btn btn-blue" style="margin-top: 2vh;" @click="$emit('main-change-page', 'roomsPage')">Registrar</button>
+            <div class="btn btn-blue" style="margin-top: 2vh;" @click="signup">Registrar</div>
         </form>
       </div>    
   </div>

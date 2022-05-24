@@ -15,19 +15,29 @@
         console.log(page);
         this.$emit('main-change-page', page);
       },
-      signIn: function(){
+      signIn: async function(){
+        let loged = false;
         let username_email = $('#email').val()
         let paswd = $('#pasword').val()
         $.ajax({
           method: "GET",
-          URL: `api.gestbot.es/api/users/${username_email}`
-        }).done(function(data) {
-          let result = bcrypt.compare(paswd, data.password)
-          console.log(result);
-        }).fail(function(msg) {
+          URL: `https://api.gestbot.es/api/login/`,
+          headers: {
+              "username": username_email,
+              "password": paswd
+          },
+          async: false
+        }).done( function(data) {
+          console.log(data);
+          loged = true
+          // $emit('main-change-page', 'roomsPage');
+        }).fail( function(msg) {
           console.log(msg);
         })
-        this.$emit('main-change-page', 'roomsPage')
+        
+        console.log(loged)
+        // if (loged) this.$emit('main-change-page', 'roomsPage');
+        
       }
     }
   }
@@ -47,8 +57,8 @@
         </div>
         <form action="" method="">
             <div class="item-form" style="margin-top: 2vh;">
-                <span for="">Email</span>
-                <input type="email" name="" id="email">
+                <span for="">Username/Email</span>
+                <input type="text" name="" id="email">
             </div>
             <div class="item-form">
                 <span for="">Contraseña</span>
@@ -59,7 +69,7 @@
       </div>
       <div class="signup">
         <p style="margin-bottom: 2vh;">Si no tienes cuenta, dale aqui para crear una</p>
-        <button class="btn btn-blue" >Registrate</button>
+        <button class="btn btn-blue"  @click="$emit('main-change-page', 'signUp')">Registrate</button>
       </div>
   </div>
   

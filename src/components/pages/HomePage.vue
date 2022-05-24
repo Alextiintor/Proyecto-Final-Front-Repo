@@ -75,7 +75,7 @@
           <img src="../../../public/imgs/bookshelf.jpg" alt="" style="border-radius: 5px 5px 110px 5px;">
           <h1>Hand Pose Detection</h1><br>
           <p>
-            <a href="https://blog.tensorflow.org/2021/11/3D-handpose.html" target="_blank">Hand Pose detection</a> is a model made by a group of developers, which allows us to detect both hands in real time. Which has helped us to create different gestures for each hand.
+            <a href="https://blog.tensorflow.org/2021/11/3D-handpose.html" target="_blank">Hand Pose Detection</a> es un modelo hecho por un grupo de desarrolladores, que nos permite la deteccion de ambas manos en tiempo real. Lo cual nos ha servido para poder crear gestos diferentes para cada mano.
           </p>
         </div>
         <div class="library">

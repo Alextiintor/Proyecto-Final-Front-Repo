@@ -26,44 +26,200 @@
 
   <div class="container front-page">
     <div>
-      <h2>A new way to move an arm robot with your bare hands</h2><br>
-      <p>GestBot allows you to use an arm robot, making gestures with your hands.</p>
+      <h2>A new way to move a robot arm with your bare hands</h2><br>
+      <p>GestBot allows you to use a robot arm, making gestures with your hands.</p>
     </div>
     <img src="/imgs/robot-arm.jpeg" alt="">
   </div>
 
-  <div class="container video-presentation">
+  <div id="demo" class="container video-presentation">
     <video src=""></video>
     <div class="">
-      <h2>A new way to move an arm robot with your bare hands</h2><br>
-      <p>GestBot allows you to use an arm robot, making gestures with your hands.</p><br><br>
+      <h2>A new way to move a robot arm with your bare hands</h2><br>
+      <p>GestBot allows you to use a robot arm, making gestures with your hands.</p><br><br>
       <button class="btn btn-blue" @click="$emit('main-change-page', 'roomsPage')">Move your robot</button>
     </div>
   </div>
 
-  <div id="gestures" class="container app-show">
+  <div id="gestures" class="container app-show hidden">
     <h1>gestos</h1>
   </div>
   
-  <div id="libraries" class="container libs-info">
-    <h1>Libraries</h1>
+  <div id="libraries" class=" libs-info">
+    <h1 class="header-lib">Project libraries</h1>
+    <div class="container">
+        <hr>
+        <div class="library">
+          <img src="../../../public/imgs/bookshelf.jpg" alt="" style="border-radius: 5px 5px 110px 5px;">
+          <h1>Library 1</h1><br>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laboriosam magnam fugit, obcaecati quasi temporibus, architecto recusandae commodi possimus itaque, quia dignissimos! Repellendus similique modi quo dolorem provident totam sed?</p>
+        </div>
+        <div class="library">
+          <img src="../../../public/imgs/bookshelf.jpg" alt="" style="border-radius: 110px 5px 5px 5px;">
+          <h1>Library 2</h1><br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab excepturi sint perspiciatis numquam, hic in vero sequi debitis impedit maiores, soluta ea voluptate? Laborum quibusdam, labore rem dolor animi modi.</p>
+        </div>
+        <hr>
+    </div>
   </div>
 
-  <div class="container models-info">
-    <h1>Models</h1>
+  <div id="models" class="models-info">
+    <h1 class="header-lib">Project models</h1>
+    <div class="container">
+        <hr>
+        <div class="library">
+          <img src="../../../public/imgs/bookshelf.jpg" alt="" style="border-radius: 5px 5px 110px 5px;">
+          <h1>Model 1</h1><br>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laboriosam magnam fugit, obcaecati quasi temporibus, architecto recusandae commodi possimus itaque, quia dignissimos! Repellendus similique modi quo dolorem provident totam sed?</p>
+        </div>
+        <div class="library">
+          <img src="../../../public/imgs/bookshelf.jpg" alt="" style="border-radius: 110px 5px 5px 5px;">
+          <h1>Model 2</h1><br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab excepturi sint perspiciatis numquam, hic in vero sequi debitis impedit maiores, soluta ea voluptate? Laborum quibusdam, labore rem dolor animi modi.</p>
+        </div>
+        <hr>
+    </div>
   </div>
 
-  <div id="aboutUs" class="container owners-images">
+  <div id="aboutUs" class="container owners-images hidden">
     <h1>About Us</h1>
   </div>
 
   <footer>
-    <h1>Footer</h1>
+    <div class="footer-info-left">
+      <ul>
+        <li>item of left side footer</li>
+        <li>item of left side footer</li>
+        <li>item of left side footer</li>
+        <li>item of left side footer</li>
+        <li>item of left side footer</li>
+        <li>item of left side footer</li>
+        <li>item of left side footer</li>
+        <li>item of left side footer</li>
+        <li>item of left side footer</li>
+        <li>item of left side footer</li>
+        <li>item of left side footer</li>
+        <li>item of left side footer</li>
+        <li>item of left side footer</li>
+        <li>item of left side footer</li>
+        <li>item of left side footer</li>
+        <li>item of left side footer</li>
+        <li>item of left side footer</li>
+        <li>item of left side footer</li>
+        <li>item of left side footer</li>
+        <li>item of left side footer</li>
+        <li>item of left side footer</li>
+        <li>item of left side footer</li>
+      </ul>
+    </div>
+    <div class="footer-info-right">
+      <div class="footer-info-up">
+        <div>
+          <ul>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+            <li>item of left side footer</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-info-down">Web designed by Alex Gallardo and Oscar Adell</div>
+    </div>
   </footer>
 
 </template>
 
 <style scoped>
+
+/* =========================================Footer========================================= */
+footer{
+  font-family: 'Asap';
+  font-size: 1.25rem;
+  display: flex;
+  padding: 5vw;
+}
+.footer-info-left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  height: 55vh;
+  margin-right: 5vw;
+  background-color: var(--white);
+  border: 2px solid var(--blue);
+  border-radius: 8px;
+}
+.footer-info-right{
+  width: 60vw;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-info-up{
+  width: 60vw;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10vh;
+}
+.footer-info-up div{
+  width: 15vw;
+  height: 35vh;
+  background-color: var(--white);
+  border: 2px solid var(--blue);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-info-down{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 60vw;
+  height: 10vh;
+  background-color: var(--white);
+  border: 2px solid var(--blue);
+  border-radius: 8px;
+}
 /* =========================================front-page========================================= */
 .front-page{
   justify-content: center;
@@ -118,4 +274,44 @@
 .video-presentation p{
   font-size: 32px;
 }
+/* =========================================libraries========================================= */
+#libraries hr, #models hr{
+  margin-top: -15vh;
+  border:         none;
+  border-left:    1px solid hsla(200, 10%, 50%,100);
+  height:         50vh;
+  width:          1px;  
+}
+.header-lib{
+  font-size: 4rem;
+  font-family: "Josefin Sans";
+  font-weight: 100;
+  margin-top: 8vh;
+  margin-left: 8vw;
+}
+
+.library{
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  height: 75vh;
+}
+.library img{
+  width: 25vw;
+  height: 20vh;
+  object-fit: cover;
+  margin-bottom: 3vh;
+}
+
+.library h1{
+  font-size: 2.5em;
+  font-family: 'Josefin Sans';
+  margin-bottom: 3vh;
+}
+.library p{
+  font-size: 24px;
+  font-family: 'Asap';
+  text-align: justify;
+}
+
 </style>

@@ -98,16 +98,22 @@
 
                     <!-- Numeros -->
                     <tr class="row-grey">
-                        <td class="gesture-name">Dos</td>
-                        <td class="gesture-icon"><i class="fa-solid fa-hand-peace"></i></td>
+                        <td class="gesture-name"></td>
+                        <td class="gesture-icon"></td>
+                        <!-- <td class="gesture-name">Dos</td>
+                        <td class="gesture-icon"><i class="fa-solid fa-hand-peace"></i></td> -->
                     </tr>
                     <tr>
-                        <td class="gesture-name">tres</td>
-                        <td class="gesture-icon"><img src="/imgs/icons/three-fingers.png" alt="" srcset=""></td>
+                        <td class="gesture-name"></td>
+                        <td class="gesture-icon"></td>
+                        <!-- <td class="gesture-name">tres</td>
+                        <td class="gesture-icon"><img src="/imgs/icons/three-fingers.png" alt="" srcset=""></td> -->
                     </tr>
                     <tr class="row-grey">
-                        <td class="gesture-name">Cuatro</td>
-                        <td class="gesture-icon"><img src="/imgs/icons/four-fingers.png" alt="" srcset=""></td>
+                        <td class="gesture-name"></td>
+                        <td class="gesture-icon"></td>
+                        <!-- <td class="gesture-name">Cuatro</td>
+                        <td class="gesture-icon"><img src="/imgs/icons/four-fingers.png" alt="" srcset=""></td> -->
                     </tr>
                 </table>
             </div>
